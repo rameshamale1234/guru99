@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class New_Account {
-	@FindBy(xpath="[//a[text()='New Account']")WebElement CreateAcc;
-	@FindBy(xpath="[//input[@name='cusid']]")WebElement Customerid;	
-	@FindBy(xpath="[//select[@name='selaccount']]")WebElement Acctype;
-	@FindBy(xpath="[//input[@name='inideposit']")WebElement deposit;
-	@FindBy(xpath="[//input[@name='button2']")WebElement button;
+	@FindBy(xpath="//a[text()='New Account']")WebElement CreateAcc;
+	@FindBy(xpath="//input[@name='cusid']")WebElement Customerid;	
+	@FindBy(xpath="//select[@name='selaccount']")WebElement Acctype;
+	@FindBy(xpath="//input[@name='inideposit']")WebElement deposit;
+	@FindBy(xpath="//input[@name='button2']")WebElement button;
 	New_Account (WebDriver driver){
 			PageFactory.initElements(driver, this);
 		}
@@ -23,7 +23,7 @@ public class New_Account {
 	}
 	public void Acctyp() {
 		Select sel=new Select(Acctype);
-		sel.selectByValue("Savings");
+		sel.selectByValue("Current");
 	}
 	public void indepo() {
 		deposit.sendKeys("123456");

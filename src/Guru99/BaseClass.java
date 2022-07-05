@@ -12,9 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
 	    WebDriver driver;
-		public  void intilizebrowser() throws IOException {
+		public void intilizebrowser() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\rames\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
+		driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get(utilityclass.getPFData("URL"));
 	}

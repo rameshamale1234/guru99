@@ -30,7 +30,6 @@ public static String getTestData(int rowindex,int cellIndex) throws EncryptedDoc
     XSSFWorkbook workbook=new   XSSFWorkbook(file); 
 	XSSFSheet sh = workbook.getSheet("Data");
 	String value = sh.getRow(rowindex).getCell(cellIndex).getStringCellValue();
-	System.out.println("bmbm");
 	return value;
 
 }

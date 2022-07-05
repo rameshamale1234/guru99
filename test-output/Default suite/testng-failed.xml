@@ -7,7 +7,6 @@
         <methods>
           <include name="login"/>
           <include name="open"/>
-          <include name="createnewacc"/>
           <include name="openbrowser"/>
         </methods>
       </class> <!-- Guru99.Loginpage -->
